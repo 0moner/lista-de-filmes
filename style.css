@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #2C2D27;
+    --second-color: #8A3FD1;
+}
+
+body {
+    background-color: var(--bg-color);
+    background-position: center top;
+    height: 100vh;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    position: relative;
+    padding: 10px;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.gallery-wrapper {
+    list-style: none;
+    overflow-x: auto;
+}
+
+.gallery {
+    display: flex;
+    flex-flow: row nowrap;
+    
+}
+
+.item {
+    flex-shrink: 0;
+}
+
+#uFilmes img {
+    margin-bottom: 10px;
+    max-width: 180px;
+    border-radius: 15px;
+    max-height: 260px;    
+}
+
+ul img {
+	margin: 10px;
+	transition: 200ms;
+}
+
+ul img:hover {
+	box-shadow: 0px 0px 0px 5px #0006;
+}
+
+.page-title {
+    color: #ffffff;
+    background-color: #8A3FD1;
+}
+
+.sub-title {
+    margin-bottom: 1px;
+    color: #ffffff;
+    justify-content: center;
+}
+
+input, button {
+    outline: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    justify-content: center;
+    font-family: 'Zilla Slab', serif;
+}
+
+button {
+    background-color: var(--second-color);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#botão:hover,
+#botão:active {
+	box-shadow: 0 0 0 2px #fff6;
+}
+
+li button {
+	background: none;
+	border: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0;
+}
+
+li {
+    list-style-type: none;
+	position: relative;
+	width: min-content;
+}
+
+label {
+	opacity: 0;
+    color: #ffffff;
+    font-size: 14px;
+	transition: 300ms;
+}
+
+#btnDel {
+	opacity: 0;
+	transition: 200ms;
+	cursor: pointer;
+	width: 35px;
+	height: 35px;
+	margin: 5px;
+}
+
+#btnDel img {
+	width: 35px;
+	height: auto;
+	margin: 0;
+	transition: 200ms;
+}
+
+#btnDel img:hover {
+	box-shadow: 0px 0px 4px 3.3px red;
+}
+
+::-webkit-scrollbar {
+	height: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #fffa;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #000a;
+	border-radius: 10px;
+}
